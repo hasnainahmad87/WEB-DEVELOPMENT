@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducing the revolutionary SmartHome Pro - your complete home automation solution">
+    <meta name="keywords" content="smart home, automation, IoT, home security, energy saving">
+    <title>Smar tHome Pro - Complete Home Automation</title>
+    <style>
+         :root {
+            --primary: #4a6fa5;
+            --secondary: #166088;
+            --accent: #4fc3f7;
+            --light: #f8f9fa;
+            --dark: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: var(--secondary);
+            padding: 1rem;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-hero {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .product-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .product-info {
+            flex: 1;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .feature-card {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+        
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .pricing-table th,
+        .pricing-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .pricing-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .pricing-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .highlight {
+            background-color: #fffde7;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+        
+        .demo-container {
+            margin: 2rem 0;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .product-hero {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Smart Home Pro</h1>
+        <p>The Complete Home Automation Solution</p>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#demo">Demo</a>
+        <a href="#order">Order Now</a>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <div class="product-hero">
+                <div class="product-image">
+                    <img src="images/SmartHomeSystem.jpg" alt="SmartHome Pro System">
+                </div>
+                <div class="product-info">
+                    <h2>Transform Your Living Space</h2>
+                    <p>The <span class="highlight">SmartHome Pro</span> system revolutionizes how you interact with your home. Control lighting, temperature, security, and entertainment from one intuitive interface.</p>
+                    <p>With our AI-powered automation, your home learns your habits and adjusts settings automatically, saving energy and enhancing comfort.</p>
+                    <details>
+                        <summary>Technical Specifications</summary>
+                        <ul>
+                            <li>Works with 1000+ smart devices</li>
+                            <li>256-bit encryption for security</li>
+                            <li>Compatible with Alexa, Google Assistant, and Siri</li>
+                            <li>99.9% uptime guaranteed</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Intelligent Climate Control</h3>
+                    <p>Automatically adjusts temperature based on your schedule and weather forecasts, reducing energy costs by up to 30%.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Advanced Security</h3>
+                    <p>24/7 monitoring with smart cameras, motion sensors, and automatic alerts sent directly to your phone.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Voice & App Control</h3>
+                    <p>Manage your home from anywhere using our mobile app or simple voice commands.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Energy Monitoring</h3>
+                    <p>Track and optimize your home's energy usage with real-time analytics and personalized recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Custom Scenes</h3>
+                    <p>Create custom modes like "Movie Night" that dim lights, lower blinds, and turn on your entertainment system with one tap.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Future-Proof Technology</h3>
+                    <p>Regular over-the-air updates ensure your system always has the latest features and security enhancements.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Pricing Plans</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Features</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Starter</td>
+                        <td>Basic automation for 5 devices</td>
+                        <td>60,000 Pkr</td>
+                    </tr>
+                    <tr>
+                        <td>Standard</td>
+                        <td>Whole home control for 15 devices</td>
+                        <td>150,000 Pkr</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>Complete automation for unlimited devices + professional installation</td>
+                        <td>300,000 Pkr</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><meter value="75" min="0" max="100">75%</meter> Most customers choose the Standard package</p>
+        </section>
+
+        <section id="demo">
+            <h2>See It In Action</h2>
+            <div class="demo-container">
+                <iframe src="https://player.vimeo.com/video/76979871" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>Order Now</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="package">Select Package</label>
+                    <select id="package" name="package" required>
+                        <option value="">Choose a package</option>
+                        <option value="starter">Starter (60,000)</option>
+                        <option value="standard">Standard (150,000)</option>
+                        <option value="premium">Premium (3,00,000)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Notes</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SmartHome Technologies. All rights reserved.</p>
+        <p><small>Prices subject to change. Professional installation required for Premium package.</small></p>
+        <p><time datetime="2023-11-15">Last updated: November 15, 2023</time></p>
+    </footer>
+</body>
+
+</html>

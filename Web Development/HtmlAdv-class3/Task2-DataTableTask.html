@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .active {
+            color: green;
+        }
+        
+        .inactive {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Records</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Grade</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ali Khan</td>
+                <td>CS-101</td>
+                <td>A</td>
+                <td>ali.khan@example.com</td>
+                <td class="active">Active</td>
+            </tr>
+            <tr>
+                <td>Sara Ahmed</td>
+                <td>CS-102</td>
+                <td>B+</td>
+                <td>sara.ahmed@example.com</td>
+                <td class="active">Active</td>
+            </tr>
+            <tr>
+                <td>Usman Malik</td>
+                <td>CS-103</td>
+                <td>A-</td>
+                <td>usman.malik@example.com</td>
+                <td class="inactive">Inactive</td>
+            </tr>
+            <tr>
+                <td>Fatima Riaz</td>
+                <td>CS-104</td>
+                <td>B</td>
+                <td>fatima.riaz@example.com</td>
+                <td class="active">Active</td>
+            </tr>
+            <tr>
+                <td>Ahmed Hassan</td>
+                <td>CS-105</td>
+                <td>C+</td>
+                <td>ahmed.hassan@example.com</td>
+                <td class="inactive">Inactive</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
