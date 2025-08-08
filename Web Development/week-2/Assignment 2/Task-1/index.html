@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe - Creative Digital Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e91e63',
+                        'primary-dark': '#c2185b',
+                    },
+                    fontFamily: {
+                        sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'float-slow': 'float 6s ease-in-out infinite',
+                        'float-reverse': 'float 4s ease-in-out infinite reverse',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': {
+                                transform: 'translateY(0px)'
+                            },
+                            '50%': {
+                                transform: 'translateY(-15px)'
+                            },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .blob-shape-1 {
+            border-radius: 50% 40% 60% 30%;
+        }
+        
+        .blob-shape-2 {
+            border-radius: 40% 60% 30% 50%;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f8f4ff 0%, #e8f4f8 100%);
+        }
+        
+        .backdrop-blur {
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-link-hover::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background-color: #e91e63;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link-hover:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="gradient-bg min-h-screen">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-3xl font-bold text-primary">Luxe</a>
+
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex space-x-10">
+                    <li><a href="#home" class="relative text-gray-600 hover:text-primary font-medium transition-colors nav-link-hover">Home</a></li>
+                    <li><a href="#service" class="relative text-gray-600 hover:text-primary font-medium transition-colors nav-link-hover">Service</a></li>
+                    <li><a href="#portfolio" class="relative text-gray-600 hover:text-primary font-medium transition-colors nav-link-hover">Portfolio</a></li>
+                    <li><a href="#how-we-work" class="relative text-gray-600 hover:text-primary font-medium transition-colors nav-link-hover">How we works</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden flex flex-col space-y-1">
+                    <span class="w-6 h-0.5 bg-gray-800 rounded"></span>
+                    <span class="w-6 h-0.5 bg-gray-800 rounded"></span>
+                    <span class="w-6 h-0.5 bg-gray-800 rounded"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 min-h-screen flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Hero Text -->
+                <div class="z-10">
+                    <p class="text-lg text-gray-600 mb-4">Hi, there!</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-gray-900">
+                        <span class="text-primary">LUXE</span> IS HERE TO BE<br> YOUR ASSISTANCE
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        I am here ready to help you in making creative digital products
+                    </p>
+                    <a href="#contact" class="inline-block bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl shadow-lg">
+                        Let's Discuss
+                    </a>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative flex justify-center items-center h-96 lg:h-[500px]">
+                    <img src="/placeholder.svg?height=450&width=350" alt="Professional designer" class="w-80 h-96 lg:w-96 lg:h-[450px] object-cover rounded-3xl shadow-2xl z-10 relative">
+
+                    <!-- Decorative Blobs -->
+                    <div class="absolute w-72 h-72 bg-primary blob-shape-1 top-5 right-12 z-0 opacity-90 animate-float-slow"></div>
+                    <div class="absolute w-48 h-48 bg-slate-800 blob-shape-2 bottom-12 right-5 z-0 animate-float-reverse"></div>
+
+                    <!-- Dots Pattern -->
+                    <div class="absolute w-24 h-24 top-2 right-2 opacity-40 z-0" style="background-image: radial-gradient(circle, #ccc 2px, transparent 2px); background-size: 15px 15px;"></div>
+
+                    <!-- Floating Cards -->
+                    <div class="absolute top-32 -left-5 bg-white p-4 rounded-2xl shadow-xl z-20 animate-float flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">=</div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">2K+</h3>
+                            <p class="text-sm text-gray-600">Projects</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute top-16 -right-8 bg-white p-4 rounded-2xl shadow-xl z-20 animate-float text-center">
+                        <h3 class="font-bold text-gray-900">⭐ 4.8</h3>
+                        <p class="text-sm text-gray-600">Satisfaction</p>
+                    </div>
+
+                    <div class="absolute bottom-32 -right-12 bg-white p-4 rounded-2xl shadow-xl z-20 animate-float flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">👤</div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 text-sm">Product Designer</h3>
+                            <p class="text-sm text-gray-600">5 Years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="h-px bg-gradient-to-r from-transparent via-primary to-transparent my-12"></div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="bg-white rounded-t-[3rem] mt-8 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-gray-900 uppercase tracking-wider">
+                Our Service
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Branding Service -->
+                <div class="bg-gray-50 hover:bg-white p-8 rounded-3xl transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl group">
+                    <div class="w-18 h-18 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <svg class="w-9 h-9 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Branding</h3>
+                    <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <!-- UI/UX Service -->
+                <div class="bg-gray-50 hover:bg-white p-8 rounded-3xl transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl group">
+                    <div class="w-18 h-18 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <svg class="w-9 h-9 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">UI/UX</h3>
+                    <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <!-- Product Design Service -->
+                <div class="bg-gray-50 hover:bg-white p-8 rounded-3xl transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl group md:col-span-2 lg:col-span-1">
+                    <div class="w-18 h-18 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                        <svg class="w-9 h-9 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Product Design</h3>
+                    <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
