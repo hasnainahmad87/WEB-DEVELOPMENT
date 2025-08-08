@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage about football (soccer), its history, rules, and famous players">
+    <title>The World of Football | Beautiful Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #0055A2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #003366;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            background-color: #0055A2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #003366;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .highlight {
+            background-color: #fffacd;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>The World of Football (Soccer)</h1>
+        <p>The beautiful game that unites billions worldwide</p>
+    </header>
+
+    <nav>
+        <a href="#history">History</a>
+        <a href="#rules">Rules</a>
+        <a href="#players">Famous Players</a>
+        <a href="#leagues">Top Leagues</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="history">
+            <h2>History of Football</h2>
+            <p>Football, known as soccer in some countries, has origins dating back over <strong>2,000 years</strong> to ancient China and Greece. However, the modern game was formalized in <em>England in 1863</em> with the establishment of the Football
+                Association (FA).</p>
+            <p>The first official international match was played in 1872 between England and Scotland. Today, football is the world's most popular sport, with the FIFA World Cup being the most-watched sporting event globally.</p>
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018" alt="Football stadium with fans">
+            <hr>
+        </section>
+
+        <section id="rules">
+            <h2>Basic Rules of Football</h2>
+            <p>Football is played between two teams of <span class="highlight">11 players each</span>. The objective is to score by getting the ball into the opponent's goal.</p>
+
+            <h3>Key Rules:</h3>
+            <ul>
+                <li>Matches consist of two <strong>45-minute halves</strong></li>
+                <li>Only the goalkeeper can handle the ball within their penalty area</li>
+                <li>Offside rule prevents goal-hanging</li>
+                <li>Fouls result in free kicks or penalties</li>
+                <li>Yellow and red cards are used for disciplinary actions</li>
+            </ul>
+            <br>
+        </section>
+
+        <section id="players">
+            <h2 style="color: #0055A2;">Legendary Football Players</h2>
+            <div class="gallery">
+
+                <img src="images/messi.jpeg" alt="Lionel Messi" width="200" height="200">
+                <img src="images/ronaldo.jpeg" alt="Cristiano Ronaldo" width="200" height="200">
+                <img src="images/pele.jpeg" alt="Pelé" width="200" height="200">
+
+            </div>
+
+            <table>
+                <tr>
+                    <th>Player</th>
+                    <th>Nationality</th>
+                    <th>Major Achievements</th>
+                </tr>
+                <tr>
+                    <td>Pelé</td>
+                    <td>Brazil</td>
+                    <td>3× World Cup winner (1958, 1962, 1970)</td>
+                </tr>
+                <tr>
+                    <td>Diego Maradona</td>
+                    <td>Argentina</td>
+                    <td>1986 World Cup winner, "Goal of the Century"</td>
+                </tr>
+                <tr>
+                    <td>Lionel Messi</td>
+                    <td>Argentina</td>
+                    <td>8× Ballon d'Or, 2022 World Cup winner</td>
+                </tr>
+                <tr>
+                    <td>Cristiano Ronaldo</td>
+                    <td>Portugal</td>
+                    <td>5× Ballon d'Or, most international goals</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="leagues">
+            <h2>Top Football Leagues</h2>
+            <ol>
+                <li>English Premier League (England)</li>
+                <li>La Liga (Spain)</li>
+                <li>Bundesliga (Germany)</li>
+                <li>Serie A (Italy)</li>
+                <li>Ligue 1 (France)</li>
+            </ol>
+            <p>The <strong>UEFA Champions League</strong> is the most prestigious club competition in European football.</p>
+            <hr>
+        </section>
+
+        <section id="contact">
+            <h2>Join Our Football Community</h2>
+            <form>
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="fav-player">Favorite Player:</label>
+                    <input type="text" id="fav-player" name="fav-player">
+                </div>
+                <div>
+                    <label for="comments">Your Football Story:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 The World of Football. All rights reserved.</p>
+        <p>Follow us on <a href="#" style="color: #FFD700;">Twitter</a> | <a href="#" style="color: #FFD700;">Instagram</a> | <a href="#" style="color: #FFD700;">Facebook</a></p>
+        <span>"Some people think football is a matter of life and death. I assure you, it's much more serious than that." — Bill Shankly</span>
+    </footer>
+</body>
+
+</html>

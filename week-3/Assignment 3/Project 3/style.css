@@ -1,0 +1,96 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1 {
+    background-image: url(images/Nature.jpg);
+    min-height: 400px;
+}
+
+.pimg2 {
+    background-image: url(images/download.jpg);
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url(images/download1.jpg);
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image: url(images/SkyrockCove.jpg);
+    min-height: 400px;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textBg {
+    background: #313534;
+    color: #fff;
+    padding: 20px;
+}
+
+.section {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #2ecc71;
+    transform: translateY(-3px);
+}
+
+footer {
+    background: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
