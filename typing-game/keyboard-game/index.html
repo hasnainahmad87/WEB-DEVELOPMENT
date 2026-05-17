@@ -1,0 +1,41 @@
+<!doctype html>
+<!--
+  Author: Hasnain Ahmad <hasnainswati2004@gmail.com>
+  Project: Pixel Painter — Keyboard Game
+  Created: 2026-05-17
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pixel Painter — Keyboard Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="A keyboard-controlled pixel painter with levels and scoring." />
+</head>
+<body>
+  <main>
+    <h1>Pixel Painter</h1>
+    <p class="instructions">Use <strong>Arrow keys</strong> to move, <strong>Space</strong> to paint, <strong>R/G/B/Y/K</strong> to change color, <strong>P</strong> to toggle paint-mode, <strong>Enter</strong> to start level.</p>
+
+    <section class="hud">
+      <div>Level: <span id="level">1</span></div>
+      <div>Score: <span id="score">0</span></div>
+      <div>Matched: <span id="matched">0</span>/<span id="targetCount">0</span></div>
+      <div>Time: <span id="time">00:00</span></div>
+    </section>
+
+    <div id="board"></div>
+
+    <div class="controls">
+      <button id="clear">Clear</button>
+      <button id="newLevel">New Level</button>
+    </div>
+
+    <footer>
+      <small>Events used: <code>keydown</code>, <code>keyup</code>, <code>keypress</code></small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
